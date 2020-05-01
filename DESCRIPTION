@@ -19,6 +19,15 @@ Suggests:
     covr
 Imports: 
     rlang (>= 0.1.2),
-    magrittr
+    magrittr,
+    stringi,
+    stringr,
+    purrr,
+    dplyr,
+    tidyr,
+    lubridate,
+    httr,
+    xml2,
+    purrrogress
 URL: https://github.com/jjesusfilho/tjmg
 BugReports: https://github.com/jjesusfilho/tjmg/issues

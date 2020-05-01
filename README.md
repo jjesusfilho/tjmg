@@ -15,11 +15,19 @@ coverage](https://codecov.io/gh/jjesusfilho/tjmg/branch/master/graph/badge.svg)]
 status](https://github.com/jjesusfilho/tjmg/workflows/R-CMD-check/badge.svg)](https://github.com/jjesusfilho/tjmg/actions)
 <!-- badges: end -->
 
-The goal of tjmg is to …
+Este pacote baixa e organiza os dados processuais do Tribunal de Justiça
+de Minas Gerais.
 
-## Installation
+## Instalação
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("jjesusfilho/tjmg")
 ```
+
+## Code of conduct
+
+Please note that the tjmg project is released with a [Contributor Code
+of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.

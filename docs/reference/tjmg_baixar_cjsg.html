@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tidy eval helpers — tidyeval • tjmg</title>
+<title>Baixar pesquisa jurisprudencial do TJMG — tjmg_baixar_cjsg • tjmg</title>
 
 
 <!-- jquery -->
@@ -39,40 +39,8 @@
 
 
 
-<meta property="og:title" content="Tidy eval helpers — tidyeval" />
-<meta property="og:description" content="
-
-sym() creates a symbol from a string and
-syms() creates a list of symbols from a
-character vector.
-enquo() and
-enquos() delay the execution of one or
-several function arguments. enquo() returns a single quoted
-expression, which is like a blueprint for the delayed computation.
-enquos() returns a list of such quoted expressions.
-expr() quotes a new expression locally. It
-is mostly useful to build new expressions around arguments
-captured with enquo() or enquos():
-expr(mean(!!enquo(arg), na.rm = TRUE)).
-as_name() transforms a quoted variable name
-into a string. Supplying something else than a quoted variable
-name is an error.
-That's unlike as_label() which also returns
-a single string but supports any kind of R object as input,
-including quoted function calls and vectors. Its purpose is to
-summarise that object into a single label. That label is often
-suitable as a default name.
-If you don't know what a quoted expression contains (for instance
-expressions captured with enquo() could be a variable
-name, a call to a function, or an unquoted constant), then use
-as_label(). If you know you have quoted a simple variable
-name, or would like to enforce this, use as_name().
-
-
-To learn more about tidy eval and how to use these tools, visit
-https://tidyeval.tidyverse.org and the
-Metaprogramming
-section of Advanced R." />
+<meta property="og:title" content="Baixar pesquisa jurisprudencial do TJMG — tjmg_baixar_cjsg" />
+<meta property="og:description" content="Baixar pesquisa jurisprudencial do TJMG" />
 
 
 
@@ -143,49 +111,55 @@ section of Advanced R." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Tidy eval helpers</h1>
-    <small class="dont-index">Source: <a href='https://github.com/jjesusfilho/tjmg/blob/master/R/utils-tidy-eval.R'><code>R/utils-tidy-eval.R</code></a></small>
-    <div class="hidden name"><code>tidyeval.Rd</code></div>
+    <h1>Baixar pesquisa jurisprudencial do TJMG</h1>
+    <small class="dont-index">Source: <a href='https://github.com/jjesusfilho/tjmg/blob/master/R/tjmg_baixar_cjsg.R'><code>R/tjmg_baixar_cjsg.R</code></a></small>
+    <div class="hidden name"><code>tjmg_baixar_cjsg.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
-<ul>
-<li><p><code><a href='https://rlang.r-lib.org/reference/sym.html'>sym</a>()</code> creates a symbol from a string and
-<code><a href='https://rlang.r-lib.org/reference/sym.html'>syms</a>()</code> creates a list of symbols from a
-character vector.</p></li>
-<li><p><code><a href='https://rlang.r-lib.org/reference/nse-defuse.html'>enquo</a>()</code> and
-<code><a href='https://rlang.r-lib.org/reference/nse-defuse.html'>enquos</a>()</code> delay the execution of one or
-several function arguments. <code>enquo()</code> returns a single quoted
-expression, which is like a blueprint for the delayed computation.
-<code>enquos()</code> returns a list of such quoted expressions.</p></li>
-<li><p><code><a href='https://rlang.r-lib.org/reference/nse-defuse.html'>expr</a>()</code> quotes a new expression <em>locally</em>. It
-is mostly useful to build new expressions around arguments
-captured with <code>enquo()</code> or <code>enquos()</code>:
-<code>expr(mean(!!enquo(arg), na.rm = TRUE))</code>.</p></li>
-<li><p><code><a href='https://rlang.r-lib.org/reference/as_name.html'>as_name</a>()</code> transforms a quoted variable name
-into a string. Supplying something else than a quoted variable
-name is an error.</p>
-<p>That's unlike <code><a href='https://rlang.r-lib.org/reference/as_label.html'>as_label</a>()</code> which also returns
-a single string but supports any kind of R object as input,
-including quoted function calls and vectors. Its purpose is to
-summarise that object into a single label. That label is often
-suitable as a default name.</p>
-<p>If you don't know what a quoted expression contains (for instance
-expressions captured with <code>enquo()</code> could be a variable
-name, a call to a function, or an unquoted constant), then use
-<code>as_label()</code>. If you know you have quoted a simple variable
-name, or would like to enforce this, use <code>as_name()</code>.</p></li>
-</ul>
-
-<p>To learn more about tidy eval and how to use these tools, visit
-<a href='https://tidyeval.tidyverse.org'>https://tidyeval.tidyverse.org</a> and the
-<a href='https://adv-r.hadley.nz/metaprogramming.html'>Metaprogramming
-section</a> of <a href='https://adv-r.hadley.nz'>Advanced R</a>.</p>
+    <p>Baixar pesquisa jurisprudencial do TJMG</p>
     </div>
 
+    <pre class="usage"><span class='fu'>tjmg_baixar_cjsg</span>(
+  <span class='kw'>busca</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>pesquisa_por</span> <span class='kw'>=</span> <span class='st'>"acordao"</span>,
+  <span class='kw'>dt_pub_inicial</span> <span class='kw'>=</span> <span class='st'>""</span>,
+  <span class='kw'>dt_pub_final</span> <span class='kw'>=</span> <span class='st'>""</span>,
+  <span class='kw'>diretorio</span> <span class='kw'>=</span> <span class='st'>"."</span>
+)</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>busca</th>
+      <td><p>Busca livre</p></td>
+    </tr>
+    <tr>
+      <th>pesquisa_por</th>
+      <td><p>Por ora somente acórdão. Logo incluo monocráticas.</p></td>
+    </tr>
+    <tr>
+      <th>dt_pub_inicial</th>
+      <td><p>Data inicial da publicação no formato dd/mm/yyyy</p></td>
+    </tr>
+    <tr>
+      <th>dt_pub_final</th>
+      <td><p>Data final da publicação no formato dd/mm/yyy</p></td>
+    </tr>
+    <tr>
+      <th>diretorio</th>
+      <td><p>Diretório onde salvar os htmls</p></td>
+    </tr>
+    </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>htmls</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Se o número de decisões for muito grande, está função retornará o mesmo
+aviso da página de busca do TJMG, de que se deve refinar melhor a busca.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
