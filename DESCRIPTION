@@ -1,6 +1,6 @@
 Package: tjmg
 Title: Baixa e organiza dados do TJMG
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Jose",
            family = "de Jesus Filho",
@@ -18,7 +18,7 @@ Suggests:
     roxygen2,
     covr
 Imports: 
-    rlang (>= 0.1.2),
+    rlang (>= 0.4.5),
     magrittr,
     stringi,
     stringr,
@@ -28,6 +28,8 @@ Imports:
     lubridate,
     httr,
     xml2,
-    purrrogress
+    purrrogress,
+    vctrs,
+    tibble
 URL: https://github.com/jjesusfilho/tjmg
 BugReports: https://github.com/jjesusfilho/tjmg/issues
